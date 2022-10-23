@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercício 1</title>
+</head>
+<body>
+	
+	<nav class="nav_tabs">
+    <ul>
+        <li>
+            <input type="radio" id="tab1" class="rd_tab" name="tabs" checked>
+            <label for="tab1" class="tab_label">AVANTE</label>
+            <div class="tab-content">
+            	<table id="tabela"></table>
+    			<script src="Ex1.js"></script>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="tabs" class="rd_tab" id="tab2">
+            <label for="tab2" class="tab_label">CIDADANIA</label>
+            <div class="tab-content">
+            	<table id="tabela"></table>
+    			<script src=""></script>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="tabs" class="rd_tab" id="tab3">
+            <label for="tab3" class="tab_label">MDB</label>
+            <div class="tab-content">
+            	<table id="tabela"></table>
+    			<script src=""></script>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="tabs" class="rd_tab" id="tab4">
+            <label for="tab4" class="tab_label">NOVO</label>
+            <div class="tab-content">
+            	<table id="tabela"></table>
+    			<script src=""></script>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="tabs" class="rd_tab" id="tab5">
+            <label for="tab5" class="tab_label">PATRIOTA</label>
+            <div class="tab-content">
+            	<table id="tabela"></table>
+    			<script src=""></script>
+            </div>
+        </li>
+		<li>
+            <input type="radio" name="tabs" class="rd_tab" id="tab6">
+            <label for="tab6" class="tab_label">PCdoB</label>
+            <div class="tab-content">
+            	<table id="tabela"></table>
+    			<script src=""></script>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="tabs" class="rd_tab" id="tab7">
+            <label for="tab7" class="tab_label">PDT</label>
+            <div class="tab-content">
+             	<table id="tabela"></table>
+    			<script src=""></script>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="tabs" class="rd_tab" id="tab8">
+            <label for="tab8" class="tab_label">PL</label>
+            <div class="tab-content">
+            	<table id="tabela"></table>
+    			<script src=""></script>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="tabs" class="rd_tab" id="tab9">
+            <label for="tab9" class="tab_label">PODE</label>
+            <div class="tab-content">
+            	<table id="tabela"></table>
+    			<script src=""></script>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="tabs" class="rd_tab" id="tab10">
+            <label for="tab10" class="tab_label">PP</label>
+            <div class="tab-content">
+            	<table id="tabela"></table>
+    			<script src=""></script>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="tabs" class="rd_tab" id="tab11">
+            <label for="tab11" class="tab_label">PROS</label>
+            <div class="tab-content">
+            	<table id="tabela"></table>
+    			<script src=""></script>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="tabs" class="rd_tab" id="tab12">
+            <label for="tab12" class="tab_label">PSB</label>
+            <div class="tab-content">
+            	<table id="tabela"></table>
+    			<script src=""></script>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="tabs" class="rd_tab" id="tab13">
+            <label for="tab13" class="tab_label">PSD</label>
+            <div class="tab-content">
+             	<table id="tabela"></table>
+    			<script src=""></script>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="tabs" class="rd_tab" id="tab14">
+            <label for="tab14" class="tab_label">PSDB</label>
+            <div class="tab-content">
+            	<table id="tabela"></table>
+    			<script src=""></script>
+            </div>
+        </li> 
+               
+    </ul>
+   
+</nav>
+
+<style type="text/css">
+	@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
+	*{
+		margin: 0;
+		padding: 0;
+	}
+
+	body{
+		background-color: #ddd;
+		font-family: 'Roboto Condensed';
+	}
+	.test{
+		border: 1px solid black;
+		width: 100px;
+		height: 200px;
+	}
+
+	.nav_tabs{
+		width: 100%;
+		height: auto;
+		margin: 100px auto;
+		background-color: #fff;
+		
+	}
+
+	.nav_tabs ul{
+		list-style: none;
+	}
+
+	.nav_tabs ul li{
+		float: left;
+	}
+
+	.tab_label{
+		display: block;
+		width: 100px;
+		background-color: #363b48;
+		padding: 5px;
+		font-size: 20px;
+		color:#fff;
+		cursor: pointer;
+		text-align: center;
+	}
+
+
+	.nav_tabs .rd_tab { 
+	display:none;
+	position: absolute;
+}
+
+.nav_tabs .rd_tab:checked ~ label { 
+	background-color: #e54e43;
+	color:#fff;}
+
+.tab-content{
+	border-top: solid 5px #e54e43;
+	background-color: #fff;
+	display: none;
+	position: absolute;
+	height: 320px;
+	width: 100%;
+	left: 0;	
+}
+
+.rd_tab:checked ~ .tab-content{
+	display: block;
+}
+.tab-content h2{
+	padding: 10px;
+	color: #87d3b7;
+}
+.tab-content article{
+	padding: 10px;
+	color: #555;
+}
+</style>>
+
+</body>
+</html>
